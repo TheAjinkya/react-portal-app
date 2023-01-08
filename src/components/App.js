@@ -5,6 +5,8 @@ import './App.css';
 import ContactList from './ContactList';
 import Header from './Header';
 import {uuid} from 'uuidv4'
+import ToDoComp from './ToDoComp';
+import LocalStorageComp from './LocalStorageComp';
 
 function App() {
 
@@ -27,7 +29,8 @@ function App() {
   const removeContactHandler = (id)=>{
     console.log("Conatct id", id)
     const newContactList = contact.filter(iterator => iterator.id !== id );
-    setContact(newContactList)
+    console.log(newContactList)
+    
   }
 
   useEffect(()=>{
@@ -46,11 +49,14 @@ function App() {
 
   return (
     <div className='ui container'>
-      <Header/>
+      {/* <Header/>
       <AddContact addContactHandler={addContactHandler}/>
       {contact.length >0 ? 
-      <ContactList contacts={contact} getContactId={(id)=>removeContactHandler(id)}/> : null
-      }
+      <ContactList contacts={contact} getContactId={removeContactHandler}/> : null
+      } */}
+
+      {/* <ToDoComp/> */}
+      <LocalStorageComp/>
     </div>
   );
 }

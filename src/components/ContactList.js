@@ -5,10 +5,15 @@ const ContactList = (props) => {
 
     // const [contacts] = props
 
+    const deleteContactHandler = (id)=>{
+        console.log("deleteContactHandler",id)
+        props.getContactId(id)
+    }
+
     const renderedContactList = props.contacts.map((contact) => {
         return (
             <div>
-                <ContactCard contact={contact} deleteContactHandler={(id)=>props.getContactId(id)}/>
+                <ContactCard contact={contact} Key={contact.id} clickHandler={deleteContactHandler}/>
             </div>
         )
     })
