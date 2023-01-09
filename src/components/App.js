@@ -49,14 +49,14 @@ function App() {
 
   return (
     <div className='ui container'>
-      {/* <Header/>
+      <Header/>
       <AddContact addContactHandler={addContactHandler}/>
       {contact.length >0 ? 
       <ContactList contacts={contact} getContactId={removeContactHandler}/> : null
-      } */}
+      }
 
       {/* <ToDoComp/> */}
-      <LocalStorageComp/>
+      {/* <LocalStorageComp/> */}
     </div>
   );
 }
