@@ -7,6 +7,8 @@ import Header from './Header';
 import {uuid} from 'uuidv4'
 import ToDoComp from './ToDoComp';
 import LocalStorageComp from './LocalStorageComp';
+import FacebookLoginComponent from './facebook.login.component';
+
 
 function App() {
 
@@ -57,6 +59,8 @@ function App() {
       {contact.length >0 ? 
       <ContactList contacts={contact} getContactId={removeContactHandler}/> : null
       }
+      <hr/>
+      <FacebookLoginComponent />
 
       {/* <ToDoComp/> */}
       {/* <LocalStorageComp/> */}
