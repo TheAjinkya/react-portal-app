@@ -30,7 +30,10 @@ function App() {
     console.log("Conatct id", id)
     const newContactList = contact.filter(iterator => iterator.id !== id );
     console.log(newContactList)
-    
+    if(newContactList.length === 0){
+      newContactList = []
+    }
+    setContact(newContactList)
   }
 
   useEffect(()=>{
