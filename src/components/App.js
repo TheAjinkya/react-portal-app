@@ -8,6 +8,7 @@ import {uuid} from 'uuidv4'
 import ToDoComp from './ToDoComp';
 import LocalStorageComp from './LocalStorageComp';
 import FacebookLoginComponent from './facebook.login.component';
+import AddUser from '../users/Users/AddUser';
 
 
 function App() {
@@ -54,16 +55,16 @@ function App() {
 
   return (
     <div className='ui container'>
-      <Header/>
+      {/* <Header/>
       <AddContact addContactHandler={addContactHandler}/>
       {contact.length >0 ? 
       <ContactList contacts={contact} getContactId={removeContactHandler}/> : null
       }
-      <hr/>
+      <hr/> */}
       <FacebookLoginComponent />
-
-      {/* <ToDoComp/> */}
-      {/* <LocalStorageComp/> */}
+      <hr/>
+      <AddUser/>
+     
     </div>
   );
 }
