@@ -9,6 +9,7 @@ import ToDoComp from './ToDoComp';
 import LocalStorageComp from './LocalStorageComp';
 import FacebookLoginComponent from './facebook.login.component';
 import AddUser from '../users/Users/AddUser';
+import UserReducers from '../reducers/UserReducers';
 
 
 function App() {
@@ -64,6 +65,8 @@ function App() {
       <FacebookLoginComponent />
       <hr/>
       <AddUser/>
+      <hr/>
+      <UserReducers/>
      
     </div>
   );
