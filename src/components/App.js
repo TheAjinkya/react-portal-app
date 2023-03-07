@@ -10,6 +10,7 @@ import LocalStorageComp from './LocalStorageComp';
 import FacebookLoginComponent from './facebook.login.component';
 import AddUser from '../users/Users/AddUser';
 import UserReducers from '../reducers/UserReducers';
+import GetUserData from '../DataComponent/GetUserData'
 
 
 function App() {
@@ -67,6 +68,8 @@ function App() {
       <AddUser/>
       <hr/>
       <UserReducers/>
+      <hr/>
+      <GetUserData/>
      
     </div>
   );
